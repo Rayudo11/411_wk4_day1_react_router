@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
-// Import { Link } here //
+import {Link} from 'react-router-dom'
 
 const Navigation = () => {
     return (
@@ -14,12 +14,13 @@ const Navigation = () => {
                     FakeCars.com
                 </Typography>
                 <ul className="nav-list">
-                    <li className="nav-list-item">
-                        {/* Add Link here */}
+                    <li className="nav-list-item">                      
+                        <Link to='/'>Home</Link>
                     </li>
-                    <li className="nav-list-item">
-                        {/* Add Link here */}
+                    <li className="nav-list-item">                        
+                        <Link to='/about'>About</Link>
                     </li>
+                    
                 </ul>
             </Toolbar>
         </AppBar>
